@@ -2,7 +2,7 @@ const classM = require('../model/classroom.model')
 
 exports.getAllClass = async (req,res,next)=>{
     const listClass = await classM.find({})
-    res.send(listClass)
+    console.log(listClass)
 }
 
 exports.postAddClassroom = async (req,res,next) =>{
