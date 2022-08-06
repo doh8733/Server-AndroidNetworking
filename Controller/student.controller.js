@@ -2,7 +2,7 @@ const student = require('../model/student.model')
 
 exports.getAllStudent = async (req,res,next)=>{
     const listStudent = await student.find({})
-    res.send(listStudent)
+    res.json(listStudent)
 }
 exports.postAddStudent = async (req,res,next)=>{
     const std= new student(
