@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 router.get('/classroom',classroomControler.getAllClass)
-router.get('/get-all-student',studentController.getAllStudent)
+router.get('/student',studentController.getAllStudent)
 router.post("/add-newClass",classroomControler.postAddClassroom)
 router.post('/edit-Class/:id',classroomControler.postEditClassroom)
 router.post('/delete-Class/:id',classroomControler.postDeleteClass)
